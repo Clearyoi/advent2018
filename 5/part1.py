@@ -13,6 +13,6 @@ class Parser(object):
                 output += char
         print len(output)
 
-input = [x for x in open("input.txt").read().strip()]
+input = open("input.txt").read().strip()
 parser = Parser()
 parser.perform_work(input)
