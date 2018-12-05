@@ -1,11 +1,4 @@
-from datetime import datetime
-from collections import defaultdict
-
-
 class Parser(object):
-
-    def __init__(self):
-        self.guards = defaultdict(dict)
 
     def check_for_collision(self, word, letter):
         end_of_word = word[-1:]
