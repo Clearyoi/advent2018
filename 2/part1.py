@@ -27,6 +27,6 @@ class DuplicatesCounter(object):
         print self.triples
         return self.doubles * self.triples
 
-words = [x for x in open("input.txt").read().strip().split('\n')]
+words = open("input.txt").read().strip().split('\n')
 counter = DuplicatesCounter()
 print counter.perform_work(words)

@@ -20,6 +20,6 @@ class NearDuplicateFinder(object):
                 break
         return self.match
 
-words = [x for x in open("input.txt").read().strip().split('\n')]
+words = open("input.txt").read().strip().split('\n')
 finder = NearDuplicateFinder()
 print finder.perform_work(words)

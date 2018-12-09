@@ -27,6 +27,6 @@ class DuplicateFinder(object):
             self.check_for_duplicates(cells)
         return len(self.duplicate_locations)
 
-words = [x for x in open("input.txt").read().strip().split('\n')]
+words = open("input.txt").read().strip().split('\n')
 finder = DuplicateFinder()
 print finder.perform_work(words)

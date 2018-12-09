@@ -26,6 +26,6 @@ class Parser(object):
         print 'Answer =', int(sleepiest_guard[0]) * int(sleepiest_guard[1])
 
 
-lines = [x for x in open("input.txt").read().strip().split('\n')]
+lines = open("input.txt").read().strip().split('\n')
 parser = Parser()
 parser.perform_work(lines)
